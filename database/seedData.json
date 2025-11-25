@@ -1,0 +1,191 @@
+{
+  "users": [
+    {
+      "name": "Rajesh Kumar",
+      "email": "rajesh@gramify.com",
+      "phone": "+91-9876543210",
+      "password": "rajesh123",
+      "role": "artisan",
+      "village": "Chandni Chowk",
+      "state": "Delhi",
+      "isVerified": true
+    },
+    {
+      "name": "Priya Sharma",
+      "email": "priya@gramify.com",
+      "phone": "+91-9876543211",
+      "password": "priya123",
+      "role": "artisan",
+      "village": "Andheri",
+      "state": "Mumbai",
+      "isVerified": true
+    },
+    {
+      "name": "Amit Singh",
+      "email": "amit@gramify.com",
+      "phone": "+91-9876543212",
+      "password": "amit123",
+      "role": "artisan",
+      "village": "Balrampur",
+      "state": "Uttar Pradesh",
+      "isVerified": false
+    },
+    {
+      "name": "Ankit Verma",
+      "email": "ankit@gramify.com",
+      "phone": "+91-9876543213",
+      "password": "ankit123",
+      "role": "customer",
+      "village": "",
+      "state": "Delhi"
+    },
+    {
+      "name": "Admin User",
+      "email": "admin@gramify.com",
+      "phone": "+91-9876543214",
+      "password": "admin123",
+      "role": "admin",
+      "village": "",
+      "state": ""
+    }
+  ],
+  "artisans": [
+    {
+      "name": "Rajesh Kumar",
+      "skills": ["Electrical Wiring", "Home Repair", "Installation"],
+      "bio": "Experienced electrician with 10+ years serving Delhi NCR. Specialized in home wiring and electrical repairs.",
+      "rating": 4.5,
+      "totalJobs": 45,
+      "services": [
+        {
+          "title": "Home Wiring Installation",
+          "description": "Complete electrical wiring for new homes and renovations",
+          "price": 5000,
+          "category": "Electrical"
+        },
+        {
+          "title": "Electrical Repair Services",
+          "description": "Fix electrical issues, circuit problems, and appliance wiring",
+          "price": 500,
+          "category": "Electrical"
+        },
+        {
+          "title": "Fan & Light Installation",
+          "description": "Install ceiling fans, tube lights, and decorative lighting",
+          "price": 300,
+          "category": "Electrical"
+        }
+      ]
+    },
+    {
+      "name": "Priya Sharma",
+      "skills": ["Tailoring", "Stitching", "Design", "Alterations"],
+      "bio": "Professional tailor specializing in traditional Indian wear and custom stitching. 8 years of experience.",
+      "rating": 4.7,
+      "totalJobs": 120,
+      "services": [
+        {
+          "title": "Saree Blouse Stitching",
+          "description": "Custom blouse stitching with perfect fitting and design",
+          "price": 400,
+          "category": "Tailoring"
+        },
+        {
+          "title": "Kurta Stitching",
+          "description": "Men's and women's kurta stitching with custom designs",
+          "price": 600,
+          "category": "Tailoring"
+        },
+        {
+          "title": "Dress Alterations",
+          "description": "All types of dress alterations and fitting adjustments",
+          "price": 200,
+          "category": "Tailoring"
+        }
+      ]
+    },
+    {
+      "name": "Amit Singh",
+      "skills": ["Construction", "Masonry", "Renovation", "Repair"],
+      "bio": "Skilled mason with expertise in construction and renovation work. Serving rural UP areas.",
+      "rating": 4.2,
+      "totalJobs": 30,
+      "services": [
+        {
+          "title": "Wall Construction",
+          "description": "Build new walls, boundary walls, and structural work",
+          "price": 8000,
+          "category": "Construction"
+        },
+        {
+          "title": "House Repair Work",
+          "description": "Fix cracks, water seepage, and structural repairs",
+          "price": 3000,
+          "category": "Construction"
+        },
+        {
+          "title": "Bathroom Renovation",
+          "description": "Complete bathroom tiling and renovation services",
+          "price": 12000,
+          "category": "Construction"
+        }
+      ]
+    }
+  ],
+  "bookings": [
+    {
+      "customerName": "Ankit Verma",
+      "artisanName": "Rajesh Kumar",
+      "serviceTitle": "Electrical Repair Services",
+      "serviceDescription": "Fix bedroom lights and fan wiring issue",
+      "amount": 500,
+      "status": "completed",
+      "paymentStatus": "released",
+      "address": "B-45, Rajouri Garden, Delhi",
+      "scheduledDate": "2024-11-20"
+    },
+    {
+      "customerName": "Ankit Verma",
+      "artisanName": "Priya Sharma",
+      "serviceTitle": "Saree Blouse Stitching",
+      "serviceDescription": "2 blouse stitching for wedding function",
+      "amount": 800,
+      "status": "in-progress",
+      "paymentStatus": "paid",
+      "address": "B-45, Rajouri Garden, Delhi",
+      "scheduledDate": "2024-11-28"
+    }
+  ],
+  "loginCredentials": {
+    "artisan1": {
+      "email": "rajesh@gramify.com",
+      "password": "rajesh123",
+      "role": "artisan",
+      "name": "Rajesh Kumar"
+    },
+    "artisan2": {
+      "email": "priya@gramify.com",
+      "password": "priya123",
+      "role": "artisan",
+      "name": "Priya Sharma"
+    },
+    "artisan3": {
+      "email": "amit@gramify.com",
+      "password": "amit123",
+      "role": "artisan",
+      "name": "Amit Singh (Unverified)"
+    },
+    "customer": {
+      "email": "ankit@gramify.com",
+      "password": "ankit123",
+      "role": "customer",
+      "name": "Ankit Verma"
+    },
+    "admin": {
+      "email": "admin@gramify.com",
+      "password": "admin123",
+      "role": "admin",
+      "name": "Admin User"
+    }
+  }
+}
