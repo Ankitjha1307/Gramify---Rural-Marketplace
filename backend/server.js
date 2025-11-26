@@ -8,16 +8,25 @@ dotenv.config();
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: 'http://localhost:3000',
+  credentials: true
+}));
 app.use(express.json());
 
 // Database connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/gramify', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-})
+// Remove the deprecated options
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/gramify')
 .then(() => console.log('✅ MongoDB connected'))
 .catch(err => console.error('❌ MongoDB connection error:', err));
+
+mongoose.connection.on('connected', () => {
+  console.log('✅ MongoDB connected successfully to database');
+});
+
+mongoose.connection.on('error', (err) => {
+  console.error('❌ MongoDB connection error:', err);
+});
 
 // Routes
 app.use('/api/auth', require('./routes/auth'));
@@ -31,7 +40,7 @@ app.get('/', (req, res) => {
   res.json({ message: 'Gramify API Server Running 🚀' });
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT;
 
 app.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);
