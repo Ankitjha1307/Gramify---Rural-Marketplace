@@ -8,10 +8,18 @@ dotenv.config();
 const app = express();
 
 // Middleware
-app.use(cors({
-  origin: 'https://gramify-rural-marketplace-846n.vercel.app',
-  credentials: true
-}));
+const corsOptions = {
+  origin: [
+    'https://gramify-rural-marketplace-846n.vercel.app', // Your frontend URL
+    'https://gramify-rural-marketplace.vercel.app',      // Alternate URL
+    'http://localhost:3000',                              // Local development
+    'http://localhost:5173',                              // Vite dev server
+  ],
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  optionsSuccessStatus: 200
+};
 app.use(express.json());
 
 // Database connection
