@@ -31,6 +31,16 @@
       "isVerified": false
     },
     {
+      "name": "Vikram Patel",
+      "email": "vikram@gramify.com",
+      "phone": "+91-9876543215",
+      "password": "vikram123",
+      "role": "artisan",
+      "village": "Gandhinagar",
+      "state": "Gujarat",
+      "isVerified": false
+    },
+    {
       "name": "Ankit Verma",
       "email": "ankit@gramify.com",
       "phone": "+91-9876543213",
@@ -130,6 +140,39 @@
           "category": "Construction"
         }
       ]
+    },
+    {
+      "name": "Vikram Patel",
+      "skills": ["Plumbing", "Pipe Fitting", "Water Tank Installation", "Bathroom Fittings"],
+      "bio": "Skilled plumber with 5 years of experience in residential plumbing services. Specialized in pipe fitting and bathroom installations.",
+      "rating": 4.1,
+      "totalJobs": 25,
+      "services": [
+        {
+          "title": "Pipe Leak Repair",
+          "description": "Fix leaking pipes, taps, and plumbing joints with quality materials",
+          "price": 400,
+          "category": "Plumbing"
+        },
+        {
+          "title": "Bathroom Fitting Installation",
+          "description": "Install taps, showers, basins, and other bathroom fixtures",
+          "price": 800,
+          "category": "Plumbing"
+        },
+        {
+          "title": "Water Tank Installation",
+          "description": "Install overhead and underground water tanks with piping",
+          "price": 2500,
+          "category": "Plumbing"
+        },
+        {
+          "title": "Drainage Cleaning",
+          "description": "Clear blocked drains and sewage pipes using professional equipment",
+          "price": 600,
+          "category": "Plumbing"
+        }
+      ]
     }
   ],
   "bookings": [
@@ -174,6 +217,12 @@
       "password": "amit123",
       "role": "artisan",
       "name": "Amit Singh (Unverified)"
+    },
+    "artisan4": {
+      "email": "vikram@gramify.com",
+      "password": "vikram123",
+      "role": "artisan",
+      "name": "Vikram Patel (Unverified)"
     },
     "customer": {
       "email": "ankit@gramify.com",
