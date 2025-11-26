@@ -9,7 +9,7 @@ const auth = async (req, res, next) => {
       return res.status(401).json({ message: 'No authentication token, access denied' });
     }
 
-    const decoded = jwt.verify(token, process.env.JWT_SECRET || 'gramify_secret_key_2024_hackathon');
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
     const user = await User.findById(decoded.id).select('-password');
 
     if (!user) {
